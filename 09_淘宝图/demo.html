@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            width: 520px;
+            height: 280px;
+            margin: 50px auto;
+            position: relative;
+        }
+        li {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+        }
+        .arrow-l,
+        .arrow-r {
+            position: absolute;
+            width: 20px;
+            height: 30px;
+            top: 50%;
+            margin-top: -15px;
+            background-color: rgba(0, 0, 0, .2);
+            color: #ccc;
+            line-height: 30px;
+            text-align: center;
+        }
+        .arrow-l {
+            left: 0;
+            /* border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px; */
+            /* border-radius: 左上角 右上角 右下角 左下角 */
+            border-radius: 0 15px 15px 0;
+        }
+        .arrow-r {
+            right: 0;
+            border-radius: 15px 0 0 15px;
+        }
+        .arrow-l:hover,
+        .arrow-r:hover {
+            background-color: rgba(0, 0, 0, .4);
+        }
+        .circle {
+            position: absolute;
+            width: 70px;
+            height: 13px;
+            bottom: 10px;
+            left: 50%;
+            margin-left: -35px;
+            background-color: rgba(225, 225,225, .3);
+            border-radius: 7px;
+        }
+        .circle li {
+            float: left;
+            width: 8px;
+            height: 8px;
+            background-color: #ccc;
+            margin: 3px;
+            border-radius: 50%;
+            padding-inline-start: 0;
+        }
+        .circle .current {
+            background-color: rgb(226, 99, 60);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <a href="#" class="arrow-l">&lt;</a>
+        <a href="#" class="arrow-r">&gt;</a>
+        <img src="images/taobao.jpg" >
+        <ul class="circle">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li class="current"></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+</html>

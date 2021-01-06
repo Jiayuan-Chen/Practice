@@ -1,3 +1,4 @@
+/* 清除元素默认的内外边距 */
 * {
     margin: 0;
     padding: 0;
@@ -6,9 +7,15 @@
 body {
     background-color: #f3f5f7;
 }
+/* 清除表单的轮廓线 */
+input {
+    outline: none;
+}
+/* 清除链接的下划线 */
 a {
     text-decoration: none;
 }
+/* 清除列表样式 */
 li {
     list-style: none;
 }
@@ -20,7 +27,32 @@ button {
     width: 1200px;
     margin: auto;
 }
+/* 清除浮动 */
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+/* 左侧固定栏开始 */
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    margin-left: -780px;
+    width: 180px;
+    height: 420px;
+    background-color: pink;
 
+}
+/* 左侧固定栏结束 */
+
+/* header-start */
 .header {
     height: 42px;
     /* background-color: aquamarine; */
@@ -245,3 +277,9 @@ button {
     color: #ff7c2d;
 }
 /* box 结束 */
+
+.test {
+    height: 60px;
+    width: 1200px;
+    background-color: #00a4ff;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            position: relative;
+            width: 222px;
+            height: 220px;
+            margin: 100px auto;
+        }
+
+        .hide {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 222px;
+            height: 220px;
+            background: rgba(0, 0, 0, .3) url(images/arr.png) no-repeat center;
+        }
+        /* 鼠标经过时，a里面黑色半透明盒子就显示出来了 */
+        .box a:hover .hide{
+            display: block;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <a href="#">
+            <div class="hide"></div>
+            <img src="images/3.jpg">
+        </a>
+    </div>
+</body>
+</html>
