@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .city {
+            position: relative;
+            margin: 100px auto;
+            width: 100px;
+            height: 100px;
+        }
+        .dotted {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: blue;
+            border-radius: 50%;
+
+        }
+        .city div[class^="pilse"] {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 8px;
+            height: 8px;
+            box-shadow: 0 0 12px blue;
+            border-radius: 50%;
+            /* animation: pluse 1s; */
+        }
+        .pilse1 {
+            animation: pluse 1S linear 0 infinite ;
+        }
+        .pilse2 {
+            animation: pluse 1S linear .4S infinite ;
+        }
+        .pilse3 {
+            animation: pluse 1S linear .8S infinite ;
+        }
+        @keyframes pluse {
+            0% {}
+            70% {
+                width: 40px;
+                height: 40px;
+                opacity: 1;
+            }
+            100% {
+                width: 70px;
+                height: 70px;
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="city">
+        <div class="dotted"></div>
+        <div class="pilse1"></div>
+        <div class="pilse2"></div>
+        <div class="pilse3"></div>
+    </div>
+</body>
+</html>

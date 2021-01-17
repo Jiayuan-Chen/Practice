@@ -52,7 +52,23 @@ button {
 }
 /* 左侧固定栏结束 */
 
+<<<<<<< HEAD
 /* header-start */
+=======
+/* 清除浮动 */
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+}
+.clearfix::after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+>>>>>>> 3abdd0c4ffe83f0f083256af306559f3bcd05b1f
 .header {
     height: 42px;
     /* background-color: aquamarine; */
@@ -278,8 +294,50 @@ button {
 }
 /* box 结束 */
 
+<<<<<<< HEAD
 .test {
     height: 60px;
     width: 1200px;
     background-color: #00a4ff;
+=======
+/* footer start */
+.footer {
+    background-color: #fff;
+    padding-top: 30px;
+    height: 385px;
+}
+.copyright {
+    float: left;
+}
+.copyright p {
+    font-size: 12px;
+    color: #666;
+    margin: 20px 0 15px 0;
+}
+
+.app {
+    display: block;
+    width: 118px;
+    height: 34px;
+    border: 1px solid #00a4ff;
+    text-align: center;
+    line-height: 34px;
+    color: #00a4ff;
+}
+.links {
+    float: right;
+}
+.links dl {
+    float: left;
+    margin-left: 118px;
+}
+.links dt {
+    height: 35px;
+    font-size: 16px;
+    color: #333;
+}
+.links  dd a {
+    font-size: 12px;
+    color: #333;
+>>>>>>> 3abdd0c4ffe83f0f083256af306559f3bcd05b1f
 }

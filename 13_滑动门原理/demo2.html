@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>微信导航栏案例</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            list-style: none;
+        }
+        body {
+            background: url("images/wx.jpg") repeat-x;
+        }
+        .nav ul li {
+            float: left;
+            padding: 0 5px;
+        }
+        .nav ul {
+            margin-top: 20px;
+        }
+        .nav a {
+            display: inline-block;
+            height: 33px;
+            background: url("images/to.png") no-repeat;
+            padding-left: 15px;
+            color: #ffffff;
+            line-height: 33px;
+            font-size: 14px;
+        }
+        .nav a span {
+            display: inline-block;
+            height: 33px;
+            background: url("images/to.png") no-repeat right;
+            padding-right: 15px;
+        }
+        /* .nav a:hover {
+            background-image: url("images/ao.png");
+        }
+        /* 鼠标点中a span也要换  */
+        /* .nav a:hover span {
+            background-image: url("images/ao.png");
+        }  */
+        .nav a:hover,
+        .nav a:hover span {
+            background-image: url("images/ao.png");
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="#">
+                <span>首页</span>
+            </a></li>
+            <li><a href="#">
+                <span>帮助与反馈</span>
+            </a></li>
+            <li><a href="#">
+                <span>公众平台</span>
+            </a></li>
+            <ul>
+            <li><a href="#">
+                <span>开放平台</span>
+            </a></li>
+
+        </ul>
+    </div>
+</body>
+</html>
