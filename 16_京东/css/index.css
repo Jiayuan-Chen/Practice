@@ -49,9 +49,12 @@ body {
 }
 /* 搜索 */
 .search-wrap {
-    position: relative;
+    position: fixed;
     height: 44px;
+    width: 100%;
     overflow: hidden;
+    min-width: 320px;
+    max-width: 640px;
 }
 .search-btn {
     position: absolute;
@@ -82,9 +85,42 @@ body {
     line-height: 44px;
 }
 .search {
+    position: relative;
     height: 30px;
-    background-color: plum;
+    background-color: #fff;
     margin: 0 50px;
     border-radius: 15px;
     margin-top: 7px;
+}
+.jd-icon {
+    width: 20px;
+    height: 15px;
+    position: absolute;
+    margin: 8px 8px 0 15px;
+    background: url(../images/jd-icon.png) no-repeat;
+    background-size: 20px 15px;
+}
+.jd-icon::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: -8px;
+    top: 0px;
+    width: 1px;
+    height: 15px;
+    background-color: #ccc;
+}
+.sou {
+    position: absolute;
+    width: 18px;
+    height: 15px;
+    left: 50px;
+    top: 9px;
+    /* 二倍精灵图做法 */
+    background: url(../images/jd-sprites.png) no-repeat -81px 0;
+    background-size: 200px;
+}
+
+.slider img {
+    width: 100%;
 }
