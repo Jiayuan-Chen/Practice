@@ -7,11 +7,17 @@ body {
     font-family: -apple-system, Arial, Helvetica, sans-serif;
     color: #666;
     line-height: 1.5;
-    background-color: #666;
+    background-color: rgb(241, 227, 227);
 }
 * {
     margin: 0;
     padding: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
 }
 /* 顶部 */
 .app {
@@ -120,7 +126,66 @@ body {
     background: url(../images/jd-sprites.png) no-repeat -81px 0;
     background-size: 200px;
 }
-
+.slider {
+    margin-top: 45px;
+}
 .slider img {
     width: 100%;
+}
+
+.banner {
+    width: 100%;
+    height: 100px;
+}
+.banner ul li {
+    float: left;
+    height: 100px;
+}
+.banner ul li:nth-child(1) {
+    width: 25%;
+}
+.banner ul li:nth-child(2) {
+    width: 50%;
+}
+.banner ul li:nth-child(3) {
+    width: 25%;
+}
+.banner ul li:nth-child(1) img,
+.banner ul li:nth-child(2) img,
+.banner ul li:nth-child(3) img {
+    height: 100px;
+}
+.banner ul li:nth-child(3) img {
+    margin-left: 5px;
+}
+.banner ul li:nth-child(1) span,
+.banner ul li:nth-child(3) span {
+    display: block;
+    color: #fff;
+    font-size: 12px;
+    margin-top: -29px;
+    margin-left: 15px;
+}
+.mall_nav {
+    width: 100%;
+    height: 150px;
+    margin-top: 5px;
+}
+.mall_nav a {
+    margin-top: 10px;
+    float: left;
+    width: 20%;
+    height: 75px;
+    text-align: center;
+    /* line-height: 75px; */
+
+}
+.mall_nav a img {
+    height: 40px;
+    
+}
+.mall_nav a span {
+    display: block;
+    color: #666;
+    font-size: 12px;
 }
